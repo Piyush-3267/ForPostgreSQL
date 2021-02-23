@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="684582e2-216b-4b4c-b142-e13122846a3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstProject/FirstProject.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet Example/Project.go" beforeDir="false" afterPath="$PROJECT_DIR$/projet Example/Project.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ForAPIs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,7 +41,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Go Build.go build second.go">
+  <component name="RunManager" selected="Go Build.go build Project.go">
+    <configuration name="go build Project.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="UsingPostgreSQL" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/projet Example/Project.go" />
+      <package value="UsingPostgreSQL" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build Test1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="UsingPostgreSQL" />
       <working_directory value="$PROJECT_DIR$" />
@@ -60,6 +69,15 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build UsingPostgreSQL/projet Example" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="UsingPostgreSQL" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/projet Example/Project.go" />
+      <package value="UsingPostgreSQL/projet Example" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build second.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="UsingPostgreSQL" />
       <working_directory value="$PROJECT_DIR$" />
@@ -71,8 +89,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build second.go" />
+        <item itemvalue="Go Build.go build Project.go" />
         <item itemvalue="Go Build.go build Test1.go" />
+        <item itemvalue="Go Build.go build UsingPostgreSQL/projet Example" />
+        <item itemvalue="Go Build.go build second.go" />
         <item itemvalue="Go Build.go build UsingPostgreSQL/okTEST" />
       </list>
     </recent_temporary>
@@ -83,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Code of using PostgreSQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Code of using PostgreSQL" />
+    <MESSAGE value="Mini Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mini Project" />
   </component>
 </project>

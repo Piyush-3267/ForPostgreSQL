@@ -24,6 +24,7 @@ var err error
 
 var (
 	emp = []employee{
+
 		{UserId: 1, Username: "onc", mobNo: 1234, Location: "XXRX1", Position: "SDE"},
 		{UserId: 2, Username: "pmd", mobNo: 1223, Location: "XEXRT1", Position: "SDE"},
 		{UserId: 3, Username: "qle", mobNo: 1230, Location: "XFF1TT", Position: "SDE"},
@@ -54,6 +55,7 @@ func main() {
 	router.HandleFunc("/Allemps/{id}", DeleteEmp).Methods("DELETE")
 	router.HandleFunc("/Allemps/add", AddEmps).Methods("POST")
 	router.HandleFunc("/Allemps/update", UpdateEmps).Methods("PUT")
+	router.HandleFunc("/Allemps/update1", UpdateEmps1).Methods("PUT")
 
 	handler := cors.Default().Handler(router)
 	log.Fatal(http.ListenAndServe(":8080", handler))
@@ -99,14 +101,21 @@ func AddEmps(w http.ResponseWriter, r *http.Request) {
 
 func UpdateEmps(w http.ResponseWriter, r *http.Request) {
 
-	var emp employee
-	json.NewDecoder(r.Body).Decode(&emp)
+	var product employee
 
-	NewEmp := db.Update(&emp)
-	err = NewEmp.Error
-	if err != nil {
-		json.NewEncoder(w).Encode(err)
-	} else {
-		json.NewEncoder(w).Encode(&emp)
-	}
+	//db.First(&product, "Username = ?", "rkf") // find product with code D42
+	db.Model(&product).Update("Location", "234xxdfs234").Where("Username = ?", "rkf")
+
+	json.NewEncoder(w).Encode(&product)
+}
+
+func UpdateEmps1(w http.ResponseWriter, r *http.Request) {
+
+	var emp employee
+
+	//db.First(&product, "Username = ?", "rkf") // find product with code D42
+	db.Model(&emp).Where("Username = ?", "onc").Update("Location", "wwewww")
+
+	json.NewEncoder(w).Encode(&emp)
+
 }
